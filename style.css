@@ -1,0 +1,52 @@
+
+body {
+    background: #000000;
+    color: rgb(0, 153, 20);
+    font-family: Courier, monospace;
+	display: inline-block;
+}
+
+
+/* .typewriter-text {
+    display: inline-block;
+  	overflow: hidden;
+  	letter-spacing: 2px;
+ 	animation: typing 5s steps(30, end), blink .75s step-end infinite;
+    white-space: nowrap;
+    font-size: 30px;
+    font-weight: 700;
+    box-sizing: border-box;
+    height: 200px;
+    width: 500px;
+    padding: 50px;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+ */
+ .typewriter {
+    overflow: hidden; /* cache le contenu avant l'animation */
+    border-right: .15em solid green; /* le curseur */
+    white-space: nowrap; /* garde le contenu sur une seule ligne */
+    margin: 0 auto; /* donne un effet de scrol quand ça "ecrit" */
+    letter-spacing: .15em; /* ecart lettre */
+    animation: 
+      typing 2.5s steps(20, end),
+      blink-caret .75s step-end infinite;
+  }
+
+@keyframes typing {
+    from { 
+        width: 0% 
+    }
+    to { 
+        width: 100% 
+    }
+}
+
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    30% { 
+        border-color: green; 
+    }
+}
